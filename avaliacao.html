@@ -1,0 +1,1085 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  "http://www.w3.org/TR/html4/loose.dtd">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <title>Model Report</title>
+  <style>
+body {
+	color: #000000;
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 10px ;
+	background : #FFFFFF;
+	margin-bottom : 0px;
+	margin-left : 0px;
+	margin-right : 0px;
+	margin-top : 0px;
+}
+
+.tbl_detail_page {
+	margin-bottom : 10px;
+	margin-left : 10px;
+	margin-right : 10px;
+	margin-top : 10px;
+}
+
+.schema_header {
+	background: #33cdff;
+	font-size : 12pt;
+	font-weight : bold;
+	padding-left : 10px;
+	padding-bottom : 5px;
+	padding-top : 5px;
+	margin-bottom: 10px;
+	border: 1px solid #888888;
+	display : block;
+}
+
+.table_header {
+	background: #caf2ff;
+	font-size : 10pt;
+	font-weight : bold;
+	padding-left : 10px;
+	padding-bottom : 5px;
+	padding-top : 5px;
+	border: 1px solid #BBBBBB;
+	display : block;
+}
+
+.table_body {
+	background: #EEEEEE;
+	padding-left: 15px;
+	padding-right: 15px;
+	border-left: 1px solid #BBBBBB;
+	border-bottom: 1px solid #BBBBBB;
+	border-right: 1px solid #BBBBBB;
+}
+
+.subitem_header {
+	color: #000000;
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 9pt;
+	font-weight : bold;
+	padding-bottom : 5px;
+	padding-top : 5px;
+	visibility : visible;
+}
+
+.subitems_table {
+	border:1px solid #CCCCCC;
+	margin-bottom: 15px;
+}
+
+.subitem_table_head {
+	color: #333333;
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 8pt;
+	font-weight : bold;
+	text-align : left;
+	border: 0pt solid #000000;
+	padding-bottom : 3px;
+	padding-left : 10px;
+	padding-right : 2px;
+	padding-top : 3px;
+	background : #FFFFCC;
+	visibility : visible;
+}
+
+.subitem_table_field {
+	color: #333333;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-weight: normal;
+	text-align: left;
+	border: 0pt solid #000000;
+	padding-bottom: 3px;
+	padding-left: 10px;
+	padding-right: 2px;
+	padding-top: 3px;
+	vertical-align: top;
+	background:#F8F8F8;
+	visibility: visible;
+}
+
+.small_text {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 7pt;
+}
+
+.ov_overview_page {
+	background : #FFFFFF;
+}
+
+.ov_main {
+	background: #BBBBBB;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	font-weight: bold;
+	display : block;
+	text-align : center;
+	padding-top: 8px;
+	padding-bottom: 0px;
+	padding-left : 0px;
+	padding-right : 0px;
+}
+
+.ov_section_link {
+	background: #EBEBEB;
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 10pt;
+	font-weight : normal;
+	text-align : center;
+	width : 100%;
+	display : block;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	border-bottom: 1px solid #B7B7B7;
+	visibility: visible;
+}
+
+.ov_section_link a {
+	color: #333333;
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 10pt;
+	font-weight : bold;
+	text-align : center;
+	text-decoration: none;
+	display : block;
+	width: 100%;
+	visibility : visible;
+}
+
+.ov_section_link a:hover {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.ov_section_subitem {
+	color: #555555;
+	background: #EBEBEB;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 7pt;
+	font-weight: normal;
+	text-align: center;
+	width: 100%;
+	padding-top: 2px;
+	padding-bottom: 4px;
+	display : block;
+	height: 12px;
+}
+
+.ov_object_link {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-weight: normal;
+	text-align: left;
+	text-indent: 15px;
+	width: 100%;
+	visibility: visible;
+}
+
+.ov_object_link a {
+	color: #333333;
+	background: #EBEBEB;
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 8pt;
+	font-weight : normal;
+	text-align : left;
+	text-decoration : none;
+	display : block;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	border-top: 1px solid #ffffff; 
+	border-bottom: 1px solid #B7B7B7; 
+	width: 100%;
+	line-height: 12px;
+	height: 12px;
+	visibility : visible;
+}
+
+
+.ov_object_link a:link {}
+.ov_object_link a:visited {}
+.ov_object_link a:active {}
+.ov_object_link a:hover {font-weight: bold; color: #000000; background: #ffffff;}
+  </style>
+</head>
+  
+<body class="tbl_detail_page">
+
+
+  <a name="Schema_Nr_0"> <!-- Schema  -->
+  <div class="schema_header">Schema avaliacao <div class="small_text">(0/1)</div></div>
+  </a>
+
+
+  <a name="Table_Nr_0"> <!-- Table  -->
+  <div class="table_header">Table acesso <div class="small_text">(0/7)</div></div>
+  </a>
+  <div class="table_body">
+
+  <div class="subitem_header">Columns</div>
+  
+  <table class="subitems_table" border="0" cellpadding="2" cellspacing="0" width="100%">
+    <tr>
+      <td class="subitem_table_head">Key</td>
+      <td class="subitem_table_head">Column Name</td>
+      <td class="subitem_table_head">Datatype</td>
+      <td class="subitem_table_head">Not Null</td>
+      <td class="subitem_table_head">Default</td>
+      <td class="subitem_table_head">Comment</td>
+    </tr>
+
+    <tr>
+      <td class="subitem_table_field">PK</td>
+      <td class="subitem_table_field">id</td>
+      <td class="subitem_table_field">BIGINT</td>
+      <td class="subitem_table_field">Yes</td>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field">Identificação</td>
+    </tr>
+
+    <tr>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field">usuario</td>
+      <td class="subitem_table_field">VARCHAR(45)</td>
+      <td class="subitem_table_field">Yes</td>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field">Usuário</td>
+    </tr>
+
+    <tr>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field">senha</td>
+      <td class="subitem_table_field">VARCHAR(45)</td>
+      <td class="subitem_table_field">Yes</td>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field">Senha</td>
+    </tr>
+
+    <tr>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field">administrador</td>
+      <td class="subitem_table_field">BIT(1)</td>
+      <td class="subitem_table_field">Yes</td>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field">É administrador?</td>
+    </tr>
+
+  </table>
+
+
+  <div class="subitem_header">Indices</div>
+  
+  <table class="subitems_table" border="0" cellpadding="2" cellspacing="0" width="100%">
+    <tr>
+      <td class="subitem_table_head">Index Name</td>
+      <td class="subitem_table_head">Columns</td>
+      <td class="subitem_table_head">Primary</td>
+      <td class="subitem_table_head">Unique</td>
+      <td class="subitem_table_head">Type</td>
+      <td class="subitem_table_head">Kind</td>
+      <td class="subitem_table_head">Comment</td>
+    </tr>
+
+    <tr>
+      <td class="subitem_table_field">PRIMARY</td>
+      <td class="subitem_table_field"><table border="0" cellpadding="2" cellspacing="0" width="100%">
+
+        </table></td>
+      <td class="subitem_table_field">Yes</td>
+      <td class="subitem_table_field">No</td>
+      <td class="subitem_table_field">PRIMARY</td>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field"></td>
+    </tr>
+
+  </table>
+
+
+  <div class="subitem_header">Relationships</div>
+  
+  <table class="subitems_table" border="0" cellpadding="2" cellspacing="" width="100%">
+    <tr>
+      <td class="subitem_table_head">Relationship Name</td>
+      <td class="subitem_table_head">Relationship Type</td>
+      <td class="subitem_table_head">Parent Table</td>
+      <td class="subitem_table_head">Child Table</td>
+      <td class="subitem_table_head">Card.</td>
+    </tr>
+
+    <tr>
+      <td class="subitem_table_field">fk_acesso_registro</td>
+      <td class="subitem_table_field">Non-Identifying</td>
+      <td class="subitem_table_field">acesso</td>
+      <td class="subitem_table_field">acesso_registro</td>
+      <td class="subitem_table_field">1:n</td>
+    </tr>
+
+  </table>
+
+  </div><!-- table_body -->
+  <br>
+
+  <a name="Table_Nr_1"> <!-- Table  -->
+  <div class="table_header">Table cliente <div class="small_text">(1/7)</div></div>
+  </a>
+  <div class="table_body">
+
+  <div class="subitem_header">Columns</div>
+  
+  <table class="subitems_table" border="0" cellpadding="2" cellspacing="0" width="100%">
+    <tr>
+      <td class="subitem_table_head">Key</td>
+      <td class="subitem_table_head">Column Name</td>
+      <td class="subitem_table_head">Datatype</td>
+      <td class="subitem_table_head">Not Null</td>
+      <td class="subitem_table_head">Default</td>
+      <td class="subitem_table_head">Comment</td>
+    </tr>
+
+    <tr>
+      <td class="subitem_table_field">PK</td>
+      <td class="subitem_table_field">id</td>
+      <td class="subitem_table_field">BIGINT</td>
+      <td class="subitem_table_field">Yes</td>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field">Identificação</td>
+    </tr>
+
+    <tr>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field">nome</td>
+      <td class="subitem_table_field">VARCHAR(100)</td>
+      <td class="subitem_table_field">Yes</td>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field">Nome</td>
+    </tr>
+
+    <tr>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field">cpf</td>
+      <td class="subitem_table_field">CHAR(11)</td>
+      <td class="subitem_table_field">Yes</td>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field">Código de Pessoa Física</td>
+    </tr>
+
+    <tr>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field">endereco_cep</td>
+      <td class="subitem_table_field">CHAR(8)</td>
+      <td class="subitem_table_field">Yes</td>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field">CEP do Endereço</td>
+    </tr>
+
+    <tr>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field">endereco_logradouro</td>
+      <td class="subitem_table_field">VARCHAR(100)</td>
+      <td class="subitem_table_field">Yes</td>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field">Logradouro do Endereço</td>
+    </tr>
+
+    <tr>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field">endereco_complemento</td>
+      <td class="subitem_table_field">VARCHAR(100)</td>
+      <td class="subitem_table_field">No</td>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field">Complemento do Endereço</td>
+    </tr>
+
+    <tr>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field">endereco_bairro</td>
+      <td class="subitem_table_field">VARCHAR(100)</td>
+      <td class="subitem_table_field">Yes</td>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field">Bairro do Endereço</td>
+    </tr>
+
+    <tr>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field">endereco_cidade</td>
+      <td class="subitem_table_field">VARCHAR(100)</td>
+      <td class="subitem_table_field">Yes</td>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field">Cidade do Endereço</td>
+    </tr>
+
+    <tr>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field">endereco_uf</td>
+      <td class="subitem_table_field">CHAR(2)</td>
+      <td class="subitem_table_field">Yes</td>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field">Unidade Federativa do Endereço</td>
+    </tr>
+
+  </table>
+
+
+  <div class="subitem_header">Indices</div>
+  
+  <table class="subitems_table" border="0" cellpadding="2" cellspacing="0" width="100%">
+    <tr>
+      <td class="subitem_table_head">Index Name</td>
+      <td class="subitem_table_head">Columns</td>
+      <td class="subitem_table_head">Primary</td>
+      <td class="subitem_table_head">Unique</td>
+      <td class="subitem_table_head">Type</td>
+      <td class="subitem_table_head">Kind</td>
+      <td class="subitem_table_head">Comment</td>
+    </tr>
+
+    <tr>
+      <td class="subitem_table_field">PRIMARY</td>
+      <td class="subitem_table_field"><table border="0" cellpadding="2" cellspacing="0" width="100%">
+
+        </table></td>
+      <td class="subitem_table_field">Yes</td>
+      <td class="subitem_table_field">No</td>
+      <td class="subitem_table_field">PRIMARY</td>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field"></td>
+    </tr>
+
+  </table>
+
+
+  <div class="subitem_header">Relationships</div>
+  
+  <table class="subitems_table" border="0" cellpadding="2" cellspacing="" width="100%">
+    <tr>
+      <td class="subitem_table_head">Relationship Name</td>
+      <td class="subitem_table_head">Relationship Type</td>
+      <td class="subitem_table_head">Parent Table</td>
+      <td class="subitem_table_head">Child Table</td>
+      <td class="subitem_table_head">Card.</td>
+    </tr>
+
+    <tr>
+      <td class="subitem_table_field">fk_cliente_telefone_cliente</td>
+      <td class="subitem_table_field">Non-Identifying</td>
+      <td class="subitem_table_field">cliente</td>
+      <td class="subitem_table_field">cliente_telefone</td>
+      <td class="subitem_table_field">1:n</td>
+    </tr>
+
+    <tr>
+      <td class="subitem_table_field">fk_cliente_email</td>
+      <td class="subitem_table_field">Non-Identifying</td>
+      <td class="subitem_table_field">cliente</td>
+      <td class="subitem_table_field">cliente_email</td>
+      <td class="subitem_table_field">1:n</td>
+    </tr>
+
+  </table>
+
+  </div><!-- table_body -->
+  <br>
+
+  <a name="Table_Nr_2"> <!-- Table  -->
+  <div class="table_header">Table cliente_telefone <div class="small_text">(2/7)</div></div>
+  </a>
+  <div class="table_body">
+
+  <div class="subitem_header">Columns</div>
+  
+  <table class="subitems_table" border="0" cellpadding="2" cellspacing="0" width="100%">
+    <tr>
+      <td class="subitem_table_head">Key</td>
+      <td class="subitem_table_head">Column Name</td>
+      <td class="subitem_table_head">Datatype</td>
+      <td class="subitem_table_head">Not Null</td>
+      <td class="subitem_table_head">Default</td>
+      <td class="subitem_table_head">Comment</td>
+    </tr>
+
+    <tr>
+      <td class="subitem_table_field">PK</td>
+      <td class="subitem_table_field">id</td>
+      <td class="subitem_table_field">BIGINT</td>
+      <td class="subitem_table_field">Yes</td>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field">Identificação</td>
+    </tr>
+
+    <tr>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field">cliente_id</td>
+      <td class="subitem_table_field">BIGINT</td>
+      <td class="subitem_table_field">Yes</td>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field">Identificação do Cliente</td>
+    </tr>
+
+    <tr>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field">tipo_id</td>
+      <td class="subitem_table_field">INT</td>
+      <td class="subitem_table_field">Yes</td>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field">Identificação do Tipo</td>
+    </tr>
+
+    <tr>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field">valor</td>
+      <td class="subitem_table_field">VARCHAR(10)</td>
+      <td class="subitem_table_field">Yes</td>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field">Valor</td>
+    </tr>
+
+  </table>
+
+
+  <div class="subitem_header">Indices</div>
+  
+  <table class="subitems_table" border="0" cellpadding="2" cellspacing="0" width="100%">
+    <tr>
+      <td class="subitem_table_head">Index Name</td>
+      <td class="subitem_table_head">Columns</td>
+      <td class="subitem_table_head">Primary</td>
+      <td class="subitem_table_head">Unique</td>
+      <td class="subitem_table_head">Type</td>
+      <td class="subitem_table_head">Kind</td>
+      <td class="subitem_table_head">Comment</td>
+    </tr>
+
+    <tr>
+      <td class="subitem_table_field">PRIMARY</td>
+      <td class="subitem_table_field"><table border="0" cellpadding="2" cellspacing="0" width="100%">
+
+        </table></td>
+      <td class="subitem_table_field">Yes</td>
+      <td class="subitem_table_field">No</td>
+      <td class="subitem_table_field">PRIMARY</td>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field"></td>
+    </tr>
+
+    <tr>
+      <td class="subitem_table_field">fk_cliente_telefone_cliente_idx</td>
+      <td class="subitem_table_field"><table border="0" cellpadding="2" cellspacing="0" width="100%">
+
+        </table></td>
+      <td class="subitem_table_field">No</td>
+      <td class="subitem_table_field">No</td>
+      <td class="subitem_table_field">INDEX</td>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field"></td>
+    </tr>
+
+    <tr>
+      <td class="subitem_table_field">fk_cliente_telefone_tipo_idx</td>
+      <td class="subitem_table_field"><table border="0" cellpadding="2" cellspacing="0" width="100%">
+
+        </table></td>
+      <td class="subitem_table_field">No</td>
+      <td class="subitem_table_field">No</td>
+      <td class="subitem_table_field">INDEX</td>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field"></td>
+    </tr>
+
+  </table>
+
+
+  <div class="subitem_header">Relationships</div>
+  
+  <table class="subitems_table" border="0" cellpadding="2" cellspacing="" width="100%">
+    <tr>
+      <td class="subitem_table_head">Relationship Name</td>
+      <td class="subitem_table_head">Relationship Type</td>
+      <td class="subitem_table_head">Parent Table</td>
+      <td class="subitem_table_head">Child Table</td>
+      <td class="subitem_table_head">Card.</td>
+    </tr>
+
+    <tr>
+      <td class="subitem_table_field">fk_cliente_telefone_cliente</td>
+      <td class="subitem_table_field">Non-Identifying</td>
+      <td class="subitem_table_field">cliente</td>
+      <td class="subitem_table_field">cliente_telefone</td>
+      <td class="subitem_table_field">1:n</td>
+    </tr>
+
+    <tr>
+      <td class="subitem_table_field">fk_cliente_telefone_tipo</td>
+      <td class="subitem_table_field">Non-Identifying</td>
+      <td class="subitem_table_field">cliente_telefone_tipo</td>
+      <td class="subitem_table_field">cliente_telefone</td>
+      <td class="subitem_table_field">1:n</td>
+    </tr>
+
+  </table>
+
+  </div><!-- table_body -->
+  <br>
+
+  <a name="Table_Nr_3"> <!-- Table  -->
+  <div class="table_header">Table cliente_telefone_tipo <div class="small_text">(3/7)</div></div>
+  </a>
+  <div class="table_body">
+
+  <div class="subitem_header">Columns</div>
+  
+  <table class="subitems_table" border="0" cellpadding="2" cellspacing="0" width="100%">
+    <tr>
+      <td class="subitem_table_head">Key</td>
+      <td class="subitem_table_head">Column Name</td>
+      <td class="subitem_table_head">Datatype</td>
+      <td class="subitem_table_head">Not Null</td>
+      <td class="subitem_table_head">Default</td>
+      <td class="subitem_table_head">Comment</td>
+    </tr>
+
+    <tr>
+      <td class="subitem_table_field">PK</td>
+      <td class="subitem_table_field">id</td>
+      <td class="subitem_table_field">INT</td>
+      <td class="subitem_table_field">Yes</td>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field">Identificação</td>
+    </tr>
+
+    <tr>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field">nome</td>
+      <td class="subitem_table_field">VARCHAR(45)</td>
+      <td class="subitem_table_field">Yes</td>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field">Nome</td>
+    </tr>
+
+  </table>
+
+
+  <div class="subitem_header">Indices</div>
+  
+  <table class="subitems_table" border="0" cellpadding="2" cellspacing="0" width="100%">
+    <tr>
+      <td class="subitem_table_head">Index Name</td>
+      <td class="subitem_table_head">Columns</td>
+      <td class="subitem_table_head">Primary</td>
+      <td class="subitem_table_head">Unique</td>
+      <td class="subitem_table_head">Type</td>
+      <td class="subitem_table_head">Kind</td>
+      <td class="subitem_table_head">Comment</td>
+    </tr>
+
+    <tr>
+      <td class="subitem_table_field">PRIMARY</td>
+      <td class="subitem_table_field"><table border="0" cellpadding="2" cellspacing="0" width="100%">
+
+        </table></td>
+      <td class="subitem_table_field">Yes</td>
+      <td class="subitem_table_field">No</td>
+      <td class="subitem_table_field">PRIMARY</td>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field"></td>
+    </tr>
+
+  </table>
+
+
+  <div class="subitem_header">Relationships</div>
+  
+  <table class="subitems_table" border="0" cellpadding="2" cellspacing="" width="100%">
+    <tr>
+      <td class="subitem_table_head">Relationship Name</td>
+      <td class="subitem_table_head">Relationship Type</td>
+      <td class="subitem_table_head">Parent Table</td>
+      <td class="subitem_table_head">Child Table</td>
+      <td class="subitem_table_head">Card.</td>
+    </tr>
+
+    <tr>
+      <td class="subitem_table_field">fk_cliente_telefone_tipo</td>
+      <td class="subitem_table_field">Non-Identifying</td>
+      <td class="subitem_table_field">cliente_telefone_tipo</td>
+      <td class="subitem_table_field">cliente_telefone</td>
+      <td class="subitem_table_field">1:n</td>
+    </tr>
+
+  </table>
+
+  </div><!-- table_body -->
+  <br>
+
+  <a name="Table_Nr_4"> <!-- Table  -->
+  <div class="table_header">Table cliente_email <div class="small_text">(4/7)</div></div>
+  </a>
+  <div class="table_body">
+
+  <div class="subitem_header">Columns</div>
+  
+  <table class="subitems_table" border="0" cellpadding="2" cellspacing="0" width="100%">
+    <tr>
+      <td class="subitem_table_head">Key</td>
+      <td class="subitem_table_head">Column Name</td>
+      <td class="subitem_table_head">Datatype</td>
+      <td class="subitem_table_head">Not Null</td>
+      <td class="subitem_table_head">Default</td>
+      <td class="subitem_table_head">Comment</td>
+    </tr>
+
+    <tr>
+      <td class="subitem_table_field">PK</td>
+      <td class="subitem_table_field">id</td>
+      <td class="subitem_table_field">BIGINT</td>
+      <td class="subitem_table_field">Yes</td>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field">Identificação</td>
+    </tr>
+
+    <tr>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field">cliente_id</td>
+      <td class="subitem_table_field">BIGINT</td>
+      <td class="subitem_table_field">Yes</td>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field">Identificação do Cliente</td>
+    </tr>
+
+    <tr>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field">valor</td>
+      <td class="subitem_table_field">VARCHAR(150)</td>
+      <td class="subitem_table_field">Yes</td>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field">Valor</td>
+    </tr>
+
+  </table>
+
+
+  <div class="subitem_header">Indices</div>
+  
+  <table class="subitems_table" border="0" cellpadding="2" cellspacing="0" width="100%">
+    <tr>
+      <td class="subitem_table_head">Index Name</td>
+      <td class="subitem_table_head">Columns</td>
+      <td class="subitem_table_head">Primary</td>
+      <td class="subitem_table_head">Unique</td>
+      <td class="subitem_table_head">Type</td>
+      <td class="subitem_table_head">Kind</td>
+      <td class="subitem_table_head">Comment</td>
+    </tr>
+
+    <tr>
+      <td class="subitem_table_field">PRIMARY</td>
+      <td class="subitem_table_field"><table border="0" cellpadding="2" cellspacing="0" width="100%">
+
+        </table></td>
+      <td class="subitem_table_field">Yes</td>
+      <td class="subitem_table_field">No</td>
+      <td class="subitem_table_field">PRIMARY</td>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field"></td>
+    </tr>
+
+    <tr>
+      <td class="subitem_table_field">fk_cliente_email_idx</td>
+      <td class="subitem_table_field"><table border="0" cellpadding="2" cellspacing="0" width="100%">
+
+        </table></td>
+      <td class="subitem_table_field">No</td>
+      <td class="subitem_table_field">No</td>
+      <td class="subitem_table_field">INDEX</td>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field"></td>
+    </tr>
+
+  </table>
+
+
+  <div class="subitem_header">Relationships</div>
+  
+  <table class="subitems_table" border="0" cellpadding="2" cellspacing="" width="100%">
+    <tr>
+      <td class="subitem_table_head">Relationship Name</td>
+      <td class="subitem_table_head">Relationship Type</td>
+      <td class="subitem_table_head">Parent Table</td>
+      <td class="subitem_table_head">Child Table</td>
+      <td class="subitem_table_head">Card.</td>
+    </tr>
+
+    <tr>
+      <td class="subitem_table_field">fk_cliente_email</td>
+      <td class="subitem_table_field">Non-Identifying</td>
+      <td class="subitem_table_field">cliente</td>
+      <td class="subitem_table_field">cliente_email</td>
+      <td class="subitem_table_field">1:n</td>
+    </tr>
+
+  </table>
+
+  </div><!-- table_body -->
+  <br>
+
+  <a name="Table_Nr_5"> <!-- Table  -->
+  <div class="table_header">Table acesso_registro <div class="small_text">(5/7)</div></div>
+  </a>
+  <div class="table_body">
+
+  <div class="subitem_header">Columns</div>
+  
+  <table class="subitems_table" border="0" cellpadding="2" cellspacing="0" width="100%">
+    <tr>
+      <td class="subitem_table_head">Key</td>
+      <td class="subitem_table_head">Column Name</td>
+      <td class="subitem_table_head">Datatype</td>
+      <td class="subitem_table_head">Not Null</td>
+      <td class="subitem_table_head">Default</td>
+      <td class="subitem_table_head">Comment</td>
+    </tr>
+
+    <tr>
+      <td class="subitem_table_field">PK</td>
+      <td class="subitem_table_field">id</td>
+      <td class="subitem_table_field">BIGINT</td>
+      <td class="subitem_table_field">Yes</td>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field">Identificação</td>
+    </tr>
+
+    <tr>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field">acesso_id</td>
+      <td class="subitem_table_field">BIGINT</td>
+      <td class="subitem_table_field">Yes</td>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field">Indentificação do Acesso</td>
+    </tr>
+
+    <tr>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field">datahora</td>
+      <td class="subitem_table_field">DATETIME</td>
+      <td class="subitem_table_field">Yes</td>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field">Data e hora</td>
+    </tr>
+
+    <tr>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field">tipo_id</td>
+      <td class="subitem_table_field">BIGINT</td>
+      <td class="subitem_table_field">Yes</td>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field">Identificação do Tipo</td>
+    </tr>
+
+    <tr>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field">tabela</td>
+      <td class="subitem_table_field">VARCHAR(100)</td>
+      <td class="subitem_table_field">No</td>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field">Nome da tabela</td>
+    </tr>
+
+    <tr>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field">registro_id</td>
+      <td class="subitem_table_field">BIGINT</td>
+      <td class="subitem_table_field">No</td>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field">Identificação do registro da tabela</td>
+    </tr>
+
+    <tr>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field">descricao</td>
+      <td class="subitem_table_field">TEXT</td>
+      <td class="subitem_table_field">No</td>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field">Descrição</td>
+    </tr>
+
+  </table>
+
+
+  <div class="subitem_header">Indices</div>
+  
+  <table class="subitems_table" border="0" cellpadding="2" cellspacing="0" width="100%">
+    <tr>
+      <td class="subitem_table_head">Index Name</td>
+      <td class="subitem_table_head">Columns</td>
+      <td class="subitem_table_head">Primary</td>
+      <td class="subitem_table_head">Unique</td>
+      <td class="subitem_table_head">Type</td>
+      <td class="subitem_table_head">Kind</td>
+      <td class="subitem_table_head">Comment</td>
+    </tr>
+
+    <tr>
+      <td class="subitem_table_field">PRIMARY</td>
+      <td class="subitem_table_field"><table border="0" cellpadding="2" cellspacing="0" width="100%">
+
+        </table></td>
+      <td class="subitem_table_field">Yes</td>
+      <td class="subitem_table_field">No</td>
+      <td class="subitem_table_field">PRIMARY</td>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field"></td>
+    </tr>
+
+    <tr>
+      <td class="subitem_table_field">fk_acesso_registro_idx</td>
+      <td class="subitem_table_field"><table border="0" cellpadding="2" cellspacing="0" width="100%">
+
+        </table></td>
+      <td class="subitem_table_field">No</td>
+      <td class="subitem_table_field">No</td>
+      <td class="subitem_table_field">INDEX</td>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field"></td>
+    </tr>
+
+    <tr>
+      <td class="subitem_table_field">fk_acesso_registro_acesso_tipo_idx</td>
+      <td class="subitem_table_field"><table border="0" cellpadding="2" cellspacing="0" width="100%">
+
+        </table></td>
+      <td class="subitem_table_field">No</td>
+      <td class="subitem_table_field">No</td>
+      <td class="subitem_table_field">INDEX</td>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field"></td>
+    </tr>
+
+  </table>
+
+
+  <div class="subitem_header">Relationships</div>
+  
+  <table class="subitems_table" border="0" cellpadding="2" cellspacing="" width="100%">
+    <tr>
+      <td class="subitem_table_head">Relationship Name</td>
+      <td class="subitem_table_head">Relationship Type</td>
+      <td class="subitem_table_head">Parent Table</td>
+      <td class="subitem_table_head">Child Table</td>
+      <td class="subitem_table_head">Card.</td>
+    </tr>
+
+    <tr>
+      <td class="subitem_table_field">fk_acesso_registro</td>
+      <td class="subitem_table_field">Non-Identifying</td>
+      <td class="subitem_table_field">acesso</td>
+      <td class="subitem_table_field">acesso_registro</td>
+      <td class="subitem_table_field">1:n</td>
+    </tr>
+
+    <tr>
+      <td class="subitem_table_field">fk_acesso_registro_acesso_tipo</td>
+      <td class="subitem_table_field">Non-Identifying</td>
+      <td class="subitem_table_field">acesso_registro_tipo</td>
+      <td class="subitem_table_field">acesso_registro</td>
+      <td class="subitem_table_field">1:n</td>
+    </tr>
+
+  </table>
+
+  </div><!-- table_body -->
+  <br>
+
+  <a name="Table_Nr_6"> <!-- Table  -->
+  <div class="table_header">Table acesso_registro_tipo <div class="small_text">(6/7)</div></div>
+  </a>
+  <div class="table_body">
+
+  <div class="subitem_header">Columns</div>
+  
+  <table class="subitems_table" border="0" cellpadding="2" cellspacing="0" width="100%">
+    <tr>
+      <td class="subitem_table_head">Key</td>
+      <td class="subitem_table_head">Column Name</td>
+      <td class="subitem_table_head">Datatype</td>
+      <td class="subitem_table_head">Not Null</td>
+      <td class="subitem_table_head">Default</td>
+      <td class="subitem_table_head">Comment</td>
+    </tr>
+
+    <tr>
+      <td class="subitem_table_field">PK</td>
+      <td class="subitem_table_field">id</td>
+      <td class="subitem_table_field">BIGINT</td>
+      <td class="subitem_table_field">Yes</td>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field">Identificação</td>
+    </tr>
+
+    <tr>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field">nome</td>
+      <td class="subitem_table_field">VARCHAR(45)</td>
+      <td class="subitem_table_field">Yes</td>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field">Nome</td>
+    </tr>
+
+  </table>
+
+
+  <div class="subitem_header">Indices</div>
+  
+  <table class="subitems_table" border="0" cellpadding="2" cellspacing="0" width="100%">
+    <tr>
+      <td class="subitem_table_head">Index Name</td>
+      <td class="subitem_table_head">Columns</td>
+      <td class="subitem_table_head">Primary</td>
+      <td class="subitem_table_head">Unique</td>
+      <td class="subitem_table_head">Type</td>
+      <td class="subitem_table_head">Kind</td>
+      <td class="subitem_table_head">Comment</td>
+    </tr>
+
+    <tr>
+      <td class="subitem_table_field">PRIMARY</td>
+      <td class="subitem_table_field"><table border="0" cellpadding="2" cellspacing="0" width="100%">
+
+        </table></td>
+      <td class="subitem_table_field">Yes</td>
+      <td class="subitem_table_field">No</td>
+      <td class="subitem_table_field">PRIMARY</td>
+      <td class="subitem_table_field"></td>
+      <td class="subitem_table_field"></td>
+    </tr>
+
+  </table>
+
+
+  <div class="subitem_header">Relationships</div>
+  
+  <table class="subitems_table" border="0" cellpadding="2" cellspacing="" width="100%">
+    <tr>
+      <td class="subitem_table_head">Relationship Name</td>
+      <td class="subitem_table_head">Relationship Type</td>
+      <td class="subitem_table_head">Parent Table</td>
+      <td class="subitem_table_head">Child Table</td>
+      <td class="subitem_table_head">Card.</td>
+    </tr>
+
+    <tr>
+      <td class="subitem_table_field">fk_acesso_registro_acesso_tipo</td>
+      <td class="subitem_table_field">Non-Identifying</td>
+      <td class="subitem_table_field">acesso_registro_tipo</td>
+      <td class="subitem_table_field">acesso_registro</td>
+      <td class="subitem_table_field">1:n</td>
+    </tr>
+
+  </table>
+
+  </div><!-- table_body -->
+  <br>
+
+
+
+</body>
+</html>
